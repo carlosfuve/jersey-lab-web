@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  box-sizing: border-box;
+
+  background-color: white;
+
+  font-family: 'Rubik', sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  font-variation-settings: normal;
+}
+
+.custom-shadow {
+  box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+
+@layer utilities {
+  .custom-border {
+    @apply backdrop-blur border-gray-200 border;
+  }
+}
+
+@theme {
+  --color-primary: #26b1d0;
+  --color-secondary: #32daa6;
+  --color-tertiary: #53a1c5;
+  --color-quaternary: #2297a0;
+  --color-t-1: #fc8744;
+  --color-t-2: #d81d28;
+  --color-t-3: #fdfdfd;
+}
