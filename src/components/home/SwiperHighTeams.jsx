@@ -31,7 +31,7 @@ export default function SwiperHighTeams({ teams }) {
     }, { scope: container });
 
     return (
-        <div className="px-15 py-10" >
+        <div className="px-15 py-5" >
             <div ref={container} className="flex overflow-hidden">
                 {[...teams].map((team, index) => (
                     <img key={index} src={team} className="h-30 p-6 object-contain shrink-0" />
