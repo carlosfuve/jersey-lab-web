@@ -1,7 +1,7 @@
 import HeroSection from "../components/home/HeroSection";
 import SwiperHighTeams from "../components/home/SwiperHighTeams";
 import BestSellers from "../components/home/BestSellers";
-import { teams } from "../data/laliga.js";
+import CompetitionPage from "./CompetitionPage.jsx";
 
 
 
@@ -15,10 +15,11 @@ export default function HomePage() {
     // Camisetas
 
     return (
-        <div className="flex flex-col gap-1">
+        <div className="flex flex-col">
             <HeroSection />
-            <SwiperHighTeams teams={teams} />
+            <SwiperHighTeams />
             <BestSellers />
+            <CompetitionPage />
         </div>
     )
 }

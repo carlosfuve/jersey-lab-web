@@ -69,6 +69,8 @@ export const horizontalLoop = (items, config) => {
         return tl.tweenTo(time, vars);
     }
 
+
+
     tl.next = vars => toIndex(curIndex + 1, vars);
     tl.previous = vars => toIndex(curIndex - 1, vars);
     tl.current = () => curIndex;

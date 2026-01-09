@@ -19,12 +19,6 @@ body {
 }
 
 
-@layer utilities {
-  .custom-border {
-    @apply backdrop-blur border-gray-200 border;
-  }
-}
-
 @theme {
   --color-primary: #26b1d0;
   --color-secondary: #32daa6;
